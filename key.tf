@@ -1,5 +1,5 @@
-# ssh-keygen -t rsa -f ttttt -N ''
-# ssh -i ./tttt ec2-user@13.115.229.19
+# ssh-keygen -t rsa -f ymktmk -N ''
+# ssh -i ./ymktmk ec2-user@<IP>
 resource "aws_key_pair" "key_pair" {
     key_name   = "ttttt"
     public_key = file("./ttttt.pub")
