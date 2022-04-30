@@ -22,8 +22,8 @@ resource "aws_ecs_task_definition" "task_definition" {
                     logDriver = "awslogs"
                     options   = {
                         awslogs-region        = "ap-northeast-1"
-                        awslogs-stream-prefix = aws_cloudwatch_log_group.log_group_for_ecs.name
-                        awslogs-group         = "online-code-ecs"
+                        awslogs-stream-prefix = "online-code"
+                        awslogs-group         = aws_cloudwatch_log_group.log_group_for_ecs.name
                     }
                 }
                 mountPoints      = [
